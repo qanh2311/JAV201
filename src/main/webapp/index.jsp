@@ -11,6 +11,7 @@
 <a href="${pageContext.request.contextPath}/truong-hoc/hien-thi">Truong hoc</a> <br>
 <a href="${pageContext.request.contextPath}/ban-phim/hien-thi">Ban phim</a> <br>
 <a href="${pageContext.request.contextPath}/giang-vien/hien-thi">Giang vien</a> <br>
-<a href="${pageContext.request.contextPath}/don-hang/hien-thi">Don hang</a>
+<a href="${pageContext.request.contextPath}/don-hang/hien-thi">Don hang</a> <br>
+<a href="${pageContext.request.contextPath}/login">Login</a>
 </body>
 </html>
