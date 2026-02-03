@@ -36,6 +36,8 @@ public class AjaxController extends HttpServlet {
         PrintWriter pw = resp.getWriter();
         pw.print(data);
         pw.flush();
+
+        //ajax goi api tu html
     }
 
     private void hienThi(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
