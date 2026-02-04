@@ -14,5 +14,6 @@
 <a href="${pageContext.request.contextPath}/don-hang/hien-thi">Don hang</a> <br>
 <a href="${pageContext.request.contextPath}/login">Login</a><br>
 <a href="${pageContext.request.contextPath}/hien-thi">Api</a><br>
+<a href="${pageContext.request.contextPath}/ve-dat/hien-thi">Ve dat</a><br>
 </body>
 </html>
