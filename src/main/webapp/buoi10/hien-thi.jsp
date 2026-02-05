@@ -11,9 +11,12 @@
                 alert("Số lượng không được âm!");
                 return false;
             }
+<<<<<<< HEAD
 
             alert("Thêm thành công");
             return true;
+=======
+>>>>>>> 76d67fe2690f98247086c9819d3f89f24d3eb127
         }
     </script>
 </head>

@@ -10,11 +10,16 @@
 
             if (soLuong === "" || soLuong < 0) {
                 alert("Số lượng không được âm!");
+<<<<<<< HEAD
                 return false; // không submit
             }
 
             alert("Cập nhật thành công");
             return true; // cho submit
+=======
+                return false;
+            }
+>>>>>>> 76d67fe2690f98247086c9819d3f89f24d3eb127
         }
     </script>
 </head>

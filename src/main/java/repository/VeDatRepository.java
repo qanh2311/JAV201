@@ -1,5 +1,9 @@
 package repository;
 
+<<<<<<< HEAD
+=======
+import jakarta.persistence.Query;
+>>>>>>> 76d67fe2690f98247086c9819d3f89f24d3eb127
 import model.VeDat;
 import org.hibernate.Session;
 import util.HibernateConfig;
@@ -46,7 +50,14 @@ public class VeDatRepository {
     public void xoaVeDat(Integer id){
         try {
             session.getTransaction().begin();
+<<<<<<< HEAD
             session.delete(this.getAllById(id));
+=======
+            VeDat veDat = session.find(VeDat.class, id);
+            if(veDat != null){
+                session.remove(veDat);
+            }
+>>>>>>> 76d67fe2690f98247086c9819d3f89f24d3eb127
             session.getTransaction().commit();
         }catch (Exception e){
             e.printStackTrace();
@@ -54,5 +65,20 @@ public class VeDatRepository {
         }
     }
 
+<<<<<<< HEAD
 
+=======
+    public List<VeDat> searchByTen(String ten){
+        Query query = session.createQuery("SELECT vd FROM VeDat vd where vd.nguoiDat LIKE :ten");
+        query.setParameter("ten", "%" + ten + "%");
+        return query.getResultList();
+    }
+
+    public List<VeDat> phanTrang(int size, int page){
+        Query query = session.createQuery("SELECT vd FROM VeDat vd");
+        query.setFirstResult(page * size);
+        query.setMaxResults(size);
+        return query.getResultList();
+    }
+>>>>>>> 76d67fe2690f98247086c9819d3f89f24d3eb127
 }
