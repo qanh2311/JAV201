@@ -11,9 +11,6 @@
                 alert("Số lượng không được âm!");
                 return false;
             }
-
-            alert("Thêm thành công");
-            return true;
         }
     </script>
 </head>

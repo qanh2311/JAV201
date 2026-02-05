@@ -10,11 +10,8 @@
 
             if (soLuong === "" || soLuong < 0) {
                 alert("Số lượng không được âm!");
-                return false; // không submit
+                return false;
             }
-
-            alert("Cập nhật thành công");
-            return true; // cho submit
         }
     </script>
 </head>
